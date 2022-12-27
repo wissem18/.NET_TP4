@@ -1,0 +1,15 @@
+﻿@model IEnumerable<string>
+@{
+    <div class="list-group">
+        @foreach(string course in Model){
+        <div class="list-group-item card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Course : @course </div>
+            <div class="card-body">
+                    <p class="card-title">Link To Student: <a href="/Courses/@course">@course</a>
+                    </p>
+         
+            </div>
+        </div>
+        }
+    </div>
+}
